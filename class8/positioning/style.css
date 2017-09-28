@@ -1,0 +1,31 @@
+#one{
+  position: sticky ;
+  background-color: red;
+  opacity: 0.7;
+
+}
+#two
+{
+  position: absolute;
+  top: 200px;
+  background-color: blue;
+  opacity: 0.7;
+}
+#three
+{
+  position:static;
+  background-color: green;
+  }
+li{
+  font-size: 25px;
+}
+#il
+{
+  position: sticky;
+  top:400px;
+}
+.li2
+{
+    position: sticky;
+  top:600px;
+}

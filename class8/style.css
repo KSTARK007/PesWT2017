@@ -1,0 +1,41 @@
+*
+{
+  border-color: blue;
+  border: none;
+  font-size: 30px;
+  font-family: trebuchet MS;
+  font-weight: 500;
+  border-width: thin;
+}
+h1
+{
+  border :10px outset #BFF073;
+  padding:20px;
+  margin: 30px;
+  border-right: none;
+  border-top: none;
+}
+p{
+  border :10px double #BFF073;
+  padding:20px;
+  margin: 30px;
+  border-right: none;
+  border-top: none;
+}
+ul
+{
+  color: red;
+}
+em
+{
+  border: 3px solid #BFF073;
+
+}
+.k
+{ margin: auto;
+  margin-top: 20px;
+  display: block;
+  width: 800px;
+  height: 500px;
+  border: 5px solid #0DCF92;
+}

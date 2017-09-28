@@ -1,0 +1,7 @@
+BOX MODEL
+
+4 methods
+-content
+-padding
+-border
+-margin

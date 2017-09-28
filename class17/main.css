@@ -1,0 +1,47 @@
+body
+{
+    text-align: center;
+    background-color: rgba(225,230,220, 0.8);
+}
+ul
+{
+  list-style: none;
+  font-size: 40px;
+
+}
+input[type = button]
+{
+  border: none;
+  padding: 10px;
+  background-color: red;
+  margin-top: 10px;
+  width:33%;
+  border-radius: 30px;
+
+}
+h1
+{
+  text-align: center;
+  font-size: 30px;
+}
+a
+{
+  align: center;
+  margin: 45%;
+  
+}
+img
+{
+  height: 30%;
+  width: 10%;
+}
+div
+{
+    margin: auto;
+    padding: 20px;
+}
+
+p
+{
+  text-align: center;
+}

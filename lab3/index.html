@@ -1,0 +1,101 @@
+<html>
+<title>Customize Guest Registration</title>
+ <body>
+ 	<div style="background-color:blue;width:100%;height:20px;text-align:center;padding:10px;color:white;" >Customized Guest Registration</div>
+ 	<br>
+ 	<h1 style="color:gray;">Self-Service portal</h1>
+ 	<p style="color:blue;font-size:12px;"> Options controlling details and actions a visitor has to their own account. </p>
+ 	<table style="width:100%;border:solid black;" border="1px" >
+ 		<tr>
+ 			<td style="text-align:right; background-color:lightblue">Enabled:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">Enable self-service portal</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">Disabled Users:</td>
+ 			<td><input type="checkbox">Prohibit disabled users from accesing the service portal</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">Silent Login:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">AUTO Login by IP address<div style="color:blue;font-size:10px;">If set, and user has an active accounting session, they will be logged in automatically </div>
+ 		</tr>
+ 	</table>
+ 	
+ 	
+ <h2>Login Page</h2>
+ 
+ <table style="width:100%;border:solid black;" >
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">UI Overrides:</td>
+ 			<td><input type="radio" name="k" value="Enable self-service portal">Display Fields to override UI text and lable</td>
+ 		</tr>
+ 	</table>
+<br>
+<h2>Summary Page</h2>
+ 
+ <table style="width:100%;border:solid black;" >
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">UI Overrides:</td>
+ 			<td><input type="radio" name="k" value="Enable self-service portal">Display Fields to override UI text and lable</td>
+ 		</tr>
+ 	</table>
+ 	<br>
+ <h2>Change Password</h2>	
+ <table style="width:100%;border:solid black;" >
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">Change Password:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">Disable the ability to change passwords </td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">UI Overrides:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">Display Fields to override UI text and lable</td>
+ 		</tr>
+ 	</table>	
+ 	
+ <br>
+ <h2>Reset Password</h2>	
+ <table style="width:100%;border:solid black;" >
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">Reset Password:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">Disable the ability to change passwords</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">* Required Filed:</td>
+ 			<td>
+ 			<select>
+ 			<option selected="true">(secret Questions)</option>
+ 			<option selected="true">secret Question1</option>
+ 			<option>secret Question2</option>
+ 			<option>secret Question3</option>
+ 			<option>secret Question4</option>
+ 			</select>
+ 			<br>
+ 			<span style="color:blue;font-size:10px">The field contains a value the visitor must match prior to resetting their password.<span>
+ 			</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">* Password Generation:</td>
+ 			<td>
+ 			<select>
+ 			<option>Passwords will be randomly genarated</option>
+ 			<option>secret Question1</option>
+ 			<option>secret Question2</option>
+ 			<option>secret Question3</option>
+ 			<option>secret Question4</option>
+ 			</select>
+ 			<br>
+ 			<span style="color:blue;font-size:10px">Select the policy for reset password generation<span>
+ 			</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:right;background-color:lightblue">UI Overrides:</td>
+ 			<td><input type="checkbox" value="Enable self-service portal">Display Fields to override UI text and lable</td>
+ 		</tr>
+ 	</table>	
+ 	<br><br>
+ 	<div style="background-color:lightblue;text-align:center">
+ 	<input type="button" value="Save and Reload" style="text-align:center;background-color:blue;color:white;padding:3px;" align="center" >
+ 	<input type="button" value="Save Changes" style="background-color:blue;color:white;padding:3px;"align="center">
+ 	</div>
+ 	
+ </body>
+</html>

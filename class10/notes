@@ -1,0 +1,21 @@
+JAVASCRIPT
+
+by-brendan ech in 1995
+
+It is a scripting language
+
+It is interpreted and not compiled
+
+<script> - can be placed anywhere
+
+alert, prompt, confirm
+
+variable-syntax ----->            var variable = value;
+                                  variable = value;
+
+DATA TYPEs
+  1)number                stored in a 64-bits IEEE 754 format
+  2)string                "" is same as ''
+  3)Boolean               either TRUE or FALSE
+  4)null                  
+  5)undefined

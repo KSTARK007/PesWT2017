@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>javascritp</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Document Object Model(DOM) </h1>
+    <h2>Notes</h2>
+    <ul>
+      <li>The brower has a inbuilt which should follow a particular set of rules that says when the browser encounter the tag the browser will create a object of that tag </li>
+      <li>When ever we write a js to change the webpage the source code does not change, only the object are changed using DOM </li>
+      <li>if browser encounter the html tag it creates a object html and than moves on and then if it finds the head tag it creates a object and then as the head is nested in html it linkes the head tag and html tag and makes head a child node of html and soo on </li>
+      <li>if the browser encounter the closing tag then the link is nolonger done which ever tag comes later will not be linked to the prev parent node </li>
+      <li>API(application porgramming interface) can be a interface between the application and OS or one application to another </li>
+      <li>most of the methods we learn is applied on document object </li>
+    </ul>
+<h3>Methods of DOM </h3>
+    <ol>
+      <li>Creating Elements <br>
+          var el = document.createElement("h6");<br>
+          el.innerHTML("HELLO"); //or<br>
+          el.textContent = "HELLO";<br>
+          document.body.appendChild(el);//to the end <br>
+          insertBefore(el,document.getElementById("h1_element"));<br>
+        </li>
+        <br>
+      <li>Deleting Elements <br>
+          document.body.removeChild(el);<br>
+          document.body.removeChild(getElementById("h1_id"));//to remove a node of a specific id in this case it is h1_id <br>
+          document.getElementById("div_Id").removeChild("h1_id");//to remove the child node(h1_id) of the parent node(div_id)<br>
+        </li>
+    </ol>
+
+    <script type="text/javascript"src="main.js"></script>
+  </body>
+</html>
