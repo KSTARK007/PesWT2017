@@ -1,5 +1,3 @@
-# PesWT2017
+# WT2017
 
-This is a file for all the Pes Third sem students 
-
-ALL the Best Working on it 
+THis is a website for 3rd sem students in pes unversity doing CS 

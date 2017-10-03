@@ -1,0 +1,13 @@
+body
+{
+	text-align: center;
+	font-size: 30px;
+}
+a
+{
+	font-size: 20px;
+	width: auto;
+	height: auto;
+	display: block;
+	background-color: #ABC;
+}
