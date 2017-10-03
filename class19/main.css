@@ -1,0 +1,27 @@
+body
+{
+  background-color: #424242;
+  text-align: center;
+}
+input[type=button]
+{
+  position: static;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #102340;
+  color:white;
+}
+a
+{
+  text-align: center;
+  font-size: 30px;
+}
+a:visited
+{
+  color:green;
+}
+a:hover
+{
+  color: red;
+}
