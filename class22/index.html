@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>CLASS 22 </title>
+  </head>
+  <body>
+
+<div id="a">
+    <div id="b">
+        <div id="c">
+            <div id="d">
+              <div id="e">
+                <div id="f">
+                  <div id="g">
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <h1>bubbling and Capturing</h1>
+    <h2>CAPTURING is from window to leaf node(TRUE) </h2>
+    <h2>Bubbling is from bottom to Window (FALSE)</h2>
+<div id="outer">
+  <div class="inner">
+    <div class="inner2">
+
+    </div>
+  </div>
+</div>
+<ul>
+  <li>event.target = it points to the place where the event is invocked first </li>
+  <li>event.currentTarget = it point to the Div where the function is been run on  </li>
+  <li>event.stopPropagation() = it stops bubbling or capturing when this function is invoked in the dgive Div</li>
+  <li>event.eventPhase will return 1=in capturing 2=on the clicked event 3=on the bubbling phase</li>
+</ul>
+<a href="main.js">Click here for JS Code</a>
+<script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
