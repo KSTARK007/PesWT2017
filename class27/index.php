@@ -12,14 +12,14 @@
       <input type="submit" name="" value="SUBMIT">
     </form>
     <form action="form2.php" method="get" target="_blank">
-      <input type="text" name="userId">
-      <input type="password" name="userPassword" value="">
-      <input type="submit" name="" value="SUBMIT" >
+      <h3>enter the user name<input type="text" name="userId"></h3>
+      <h3>enter password<input type="password" name="userPassword" value=""></h3>
+      <input type="submit" name="" value="SUBMIT for form2" >
     </form>
     <form action="form3.php" target="_blank">
-      <input type="submit" value="SUBMIT">
+      <input type="submit" value="SUBMIT for form 3 ">
     </form>
-  
+
 
 <h1>NOTES</h1>
   <h2>COOKIE(are on the client) and SESSIONS(are on the servers)</h2>

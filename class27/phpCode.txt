@@ -1,60 +1,64 @@
-$a1 = [1,2,3];
-$a2 = ["abc","def","ghi"];
-$a3 = ["jane",123,9.99];
-var_dump($a1);
-echo "<br>";
-var_dump($a2);
-echo "<br>";
-var_dump($a3);
-echo "<br>";
-$a4 = array(1,2,3,4);
-$a5[0]=10;
-$a5[1] = 20;
-var_dump($a4);
-echo "<br>";
-var_dump($a5);
-echo "<br>";
-$a5[10] = 30;
-var_dump($a5);
-echo "<br>";
-$a6 = array("name" =>"harry" ,"age"=>100,"gpa"=>9.9,0=>10);
-var_dump($a6);
-echo "<br>";
-echo $a6[0];
-$s = 99;
-var_dump(is_array($a1));
-echo "<br>";
-var_dump(is_array($s));
-echo "<br>";
-var_dump(in_array("abc",$a2));
-echo "<br>";
-var_dump(in_array("name",$a6));
-echo "Because it is a key and not a value ";
-echo "<br>";
-var_dump(array_keys($a6));
-echo "<br>";
-var_dump(array_values($a6));
-echo "<br>";
-$new = array_merge($a1,$a2,$a3);
-var_dump($new);
-echo "<br>";
-var_dump(array_push($a6,20));
-echo "<br>";
-var_dump($a6);
-echo "<br>";
-var_dump(array_pop($a6));
-echo "<br>";
-var_dump($a6);
-echo "<br>";
-var_dump(array_pop($a6));
-echo "<br>";
-var_dump(array_pop($a6));
-echo "<br>";
-var_dump($a6);
-$count_variable = count($a6);
-echo "<br>";
-echo $count_variable;
-foreach ($a6 as $key => $value)
-{
-    echo "<br>" . $key . " is the key " . $value . " is the value<br> ";
-}
+form.php
+
+<?php
+    setcookie("text1",$_GET["avalue"],time()+3600);//3600 it is Seconds
+ ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>File Handling</title>
+  </head>
+  <body>
+      <h1><a href="phpCode.txt" target="_blank"> CLICK HERE FOR PHP CODE</a></h1>
+      <?php
+      $text = $_COOKIE["text1"];
+      echo $text;
+      ?>
+  </body>
+</html>
+
+form2.php
+
+<?php
+    session_start();
+ ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>File Handling</title>
+  </head>
+  <body>
+      <h1><a href="phpCode.txt" target="_blank"> CLICK HERE FOR PHP CODE</a></h1>
+      <?php
+        $_SESSION["name"] = $_GET["userId"];
+        $_SESSION["pass"] = $_GET["userPassword"];
+        echo "Welcome ".$_SESSION["name"]."!";
+        echo "<a href =\"form3.php\">Click here for form3";
+      ?>
+  </body>
+</html>
+
+form3.php
+
+<?php
+    session_start();
+ ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>File Handling</title>
+  </head>
+  <body>
+      <h1><a href="phpCode.txt" target="_blank"> CLICK HERE FOR PHP CODE</a></h1>
+
+      <?php
+        echo "WELCOME".$_SESSION["name"]."!";
+      ?>
+  </body>
+</html>

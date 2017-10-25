@@ -13,9 +13,5 @@
       <?php
         echo $_SESSION["val"];
       ?>
-
-
-
-
   </body>
 </html>

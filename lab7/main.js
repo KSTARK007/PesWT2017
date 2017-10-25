@@ -6,7 +6,7 @@ if(Number(D_l[0])>31 || Number(D_l[1]>12))
 else
 {
 var su="th";
-var D_ans= new Date(Number(D_l[2]),Number(D_l[1]),Number(D_l[0]));
+var D_ans= new Date(Number(D_l[2]),Number(D_l[1]-1),Number(D_l[0]));
 alert(D_ans);
 if(Number(D_l[0]) == 1 || Number(D_l[0]) == 21 || Number(D_l[0]) == 31 )
     su = "st";

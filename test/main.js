@@ -1,41 +1,49 @@
-document.write("HELLO WORLD");
-alert("THIS IS A ALERT TEXT !");
-for (var i = 0; i < 5; i++) {
-  document.write(i+"<br>")
-}
-
-var x=0;
-while(x<6)
+likeButton = function()
 {
-  x++;
-}
-document.write(x);
-
-var user=prompt("enter your name please","kstark");
-document.write("<br>" + user);
-
-function k() {
-
-  document.write("");
-
+    var likeValue = this.parentNode.children[4].innerHTML;
+    var temp = Number(likeValue);
+    temp+=1;
+    this.parentNode.children[4].innerHTML = temp;
 }
 
-var con=confirm("ARE YOU SURE");
-if(con)
+function commentButton()
 {
-  alert("peace");
+  var element = this.parentNode;
+  var com = document.createElement("p");
+  com.innerHTML = prompt("enter the comment");
+  element.appendChild(com);
 }
-else {
-  alert("nOOO!");
+function deleteButton()
+{
+    var element = this.parentNode;
+    document.body.removeChild(element);
 }
-
-setInterval(k,20000);
-
-function present() {
-  var d = new Date();
-  var h = d.getHours();
-  var m = d.getMinutes();
-  var s = d.getSeconds();
-  document.body.innerHTML = h+":" + m + ":" + s;
+function status()
+{
+ statusValue = prompt("enter the status");
+ var el = document.createElement("div");
+ var s = document.createElement("h1");
+ var like = document.createElement("input");
+ var comment = document.createElement("input");
+ var del = document.createElement("input");
+ var likeValue = document.createElement("p");
+ s.innerHTML  = statusValue;
+ like.setAttribute("value","LIKE");
+ like.setAttribute("type","button");
+ like.addEventListener("click",likeButton,false);
+ comment.setAttribute("value","COMMENT");
+ comment.setAttribute("type","button");
+ comment.addEventListener("click",commentButton,false);
+ del.setAttribute("value","DELETE");
+ del.setAttribute("type","button");
+ del.addEventListener("click",deleteButton,false);
+ likeValue.innerHTML = "0";
+ document.body.appendChild(el);
+ el.appendChild(s);
+ el.appendChild(like);
+ el.appendChild(comment);
+ el.appendChild(del);
+ el.appendChild(likeValue);
 }
-setInterval(present,2000);
+var statusClick = document.querySelector("h1");
+statusClick.addEventListener("click",status,false);

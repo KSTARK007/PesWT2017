@@ -15,9 +15,5 @@
       $text = $_COOKIE["text1"];
       echo $text;
       ?>
-
-
-
-
   </body>
 </html>

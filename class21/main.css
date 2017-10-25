@@ -22,3 +22,19 @@ h2
   margin-left: 25%;
   color:black;
 }
+li
+{
+  background-color: white;
+  color:black;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+a
+{
+  text-decoration:none;
+}
+li:hover
+{
+  background-color: blue;
+}
