@@ -1,0 +1,40 @@
+echo "<h1>HELLO WORLD</h1>";
+  $a =  print "hello world";
+  echo "<br>";
+  echo $a;
+  echo "<br>";
+  printf("%d",$a);
+  $a = 10;
+  $b = 20;
+  echo "<br>";
+  echo "<br> \"+\" <br>";
+  echo $a+$b;
+  echo "<br> \"-\" <br>";
+  echo $a-$b;
+  echo "<br> \"*\" <br>";
+  echo $a*$b;
+  echo "<br> \"/\" <br>";
+  echo $a/$b;
+  echo "<br> \"%\" <br>";
+  echo $a%$b;
+  echo "<br> \"++\" <br>";
+  echo $a++;
+  echo "<br> \"--\" <br>";
+  echo $a--;
+  echo "<br>";
+  echo "and many more ";
+  
+  
+  THIS IS THE FORM.PHP
+  
+      if($_GET["text"] == "yes")
+      { echo ("true <br>");
+        echo $_GET["text"];
+      }
+    else
+      echo "FALSE";
+      for ($i=0; $i <5 ; $i++) {
+        echo "<br>";
+        echo $_GET["text"];
+        echo "<br>";
+      }

@@ -1,0 +1,24 @@
+body
+{
+  text-align: center;
+}
+img
+{
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+ul
+{
+  list-style-type: none;
+
+}
+
+
+input
+{
+  margin: 40px;
+  width:50%;
+  height: 50px;
+
+}
