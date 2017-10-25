@@ -1,0 +1,40 @@
+body
+{
+  text-align: center;
+  background-color: #232323;
+  color:white;
+}
+ul
+{
+  list-style: none;
+}
+img
+{
+  width : 80px;
+  height : 40px;
+}
+h2
+{
+  background-color: white;
+  padding: 20px;
+  border-radius:10px;
+  width:50%;
+  margin-left: 25%;
+  color:black;
+}
+li
+{
+  background-color: white;
+  color:black;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+a
+{
+  text-decoration:none;
+}
+li:hover
+{
+  background-color: blue;
+}

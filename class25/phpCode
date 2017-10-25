@@ -1,0 +1,6 @@
+echo "<h1>HELLO WORLD</h1>";
+$a =  print "hello world";
+echo "<br>";
+echo $a;
+echo "<br>";
+printf("%d",$a);

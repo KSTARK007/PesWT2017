@@ -1,0 +1,51 @@
+body
+{
+  background-color: #212121;
+  text-align: center;
+}
+ul
+{
+  list-style: none;
+}
+li
+{
+  background-color: white;
+  color:black;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  text-align: center;
+}
+li:hover
+{
+    background-color: green;
+}
+
+input[type="text"]
+{
+  margin-left : 25%;
+  width: 50%;
+  padding: 20px;
+  margin-bottom:  10px;
+  display: block;
+}
+input[type="password"]
+{
+  margin-left : 25%;
+  width: 50%;
+  padding: 20px;
+  margin-bottom:  10px;
+  display: block;
+
+}
+input[type="submit"]
+{
+
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+
+}

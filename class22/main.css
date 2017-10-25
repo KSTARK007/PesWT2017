@@ -1,0 +1,18 @@
+body
+{
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+a
+{
+    font-size: 30px;
+}
+
+div
+{
+  border: 1px solid black ;
+  padding: 40px;
+  border-radius: 4px;
+}

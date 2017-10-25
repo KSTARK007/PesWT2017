@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>CALC</title>
+  </head>
+  <body>
+<table>
+<tr>
+<td colspan="4"><input type="text" id="inputValue" autofocus></td>
+</tr>
+<tr>
+<td><input type="button" value="1" onclick="append(1)"></td>
+<td><input type="button" value="2" onclick="append(2)"></td>
+<td><input type="button" value="3" onclick="append(3)"></td>
+<td><input type="button" value="AC" onclick="fun(0)"></td>
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="append(4)"></td>
+<td><input type="button" value="5" onclick="append(5)"></td>
+<td><input type="button" value="6" onclick="append(6)"></td>
+<td><input type="button" value="-" onclick="fun(2)"></td>
+</tr>
+<tr>
+<td><input type="button" value="7" onclick="append(7)"></td>
+<td><input type="button" value="8" onclick="append(8)"></td>
+<td><input type="button" value="9" onclick="append(9)"></td>
+<td><input type="button" value="/" onclick="fun(4 )"></td>
+</tr>
+<tr>
+<td><input type="button" value="0" onclick="append(0)"></td>
+<td><input type="button" value="=" onclick="eva()"></td>
+<td><input type="button" value="+" onclick="fun(1)"></td>
+<td><input type="button" value="*" onclick="fun(3)"></td>
+</tr>
+<tr>
+  <td colspan="4"><input type="button" name="" value="backspace" onclick="newFun()"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td colspan="3"><input type="password" id="inputPassValue" autofocus></td>
+</tr>
+<tr>
+<td><input type="button" value="1" onclick="pass(1)"></td>
+<td><input type="button" value="2" onclick="pass(2)"></td>
+<td><input type="button" value="3" onclick="pass(3)"></td>
+
+</tr>
+<tr>
+<td><input type="button" value="4" onclick="pass(4)"></td>
+<td><input type="button" value="5" onclick="pass(5)"></td>
+<td><input type="button" value="6" onclick="pass(6)"></td>
+
+</tr>
+<tr>
+<td><input type="button" value="7" onclick="pass(7)"></td>
+<td><input type="button" value="8" onclick="pass(8)"></td>
+<td><input type="button" value="9" onclick="pass(9)"></td>
+
+</tr>
+<tr>
+<td><input type="button" value="clear" onclick="clearValue()"></td>
+<td><input type="button" value="0" onclick="pass(0)"></td>
+<td><input type="button" value="show" onclick="show()"></td>
+
+</tr>
+</table>
+
+<script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
