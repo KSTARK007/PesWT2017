@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>CANVAS</title>
+  </head>
+  <body>
+    <canvas width="1850" height="1000" id="canvas"> </canvas>
+    <h3>if you what to change the height or width of canvas do it in the attribute and not in the CSS file</h3>
+    <ol>
+      <li>lines</li>
+      <li>rectangles/square</li>
+      <li>circles</li>
+      <li>Text</li>
+      <li>images</li>
+      <li>Gradent</li>
+    </ol>
+    <script type="text/javascript">
+      var canvas = document.querySelector("#canvas");
+      var context = canvas.getContext('2d');
+      context.moveTo(100,100);
+      context.lineTo(500,100);
+      context.lineTo(500,500);
+      context.lineTo(100,500);
+      context.lineTo(100,100);
+      context.strokeStyle = "#CDA412";
+      context.fillStyle = "red";
+      context.lineWidth = 20;
+      context.fill();
+      context.stroke();
+
+
+      context.beginPath();
+      context.moveTo(600,140);
+      context.lineTo(600,500);
+      context.lineTo(800,500);
+      context.closePath();
+      context.strokeStyle = "#1ABBBC";
+      context.fillStyle = "yellow";
+      context.lineWidth = 20;
+      context.stroke();
+      context.fill();
+
+      context.beginPath();
+      context.rect(100,600,400,300);
+      context.strokeStyle = "#1ABBBC";
+      context.fillStyle = "yellow";
+      context.stroke();
+      context.fill();
+
+      context.beginPath();
+      context.strokeStyle = "#1ABBBC";
+      context.fillStyle = "yellow";
+      context.fillRect(900,100,400,400);
+
+
+    </script>
+  </body>
+</html>

@@ -51,17 +51,26 @@ g.addEventListener("mouseover",forg,false);
 
 
 obj = {}
-obj.fun = function ()
+obj.fun = function (event)
 {
   alert("Outer Div");
+  alert(event.currentTarget+"the target is"+event.target);
 }
-obj.fun2 = function()
+obj.fun2 = function(event)
 {
-  alert("inner Div");
+  alert("inn Div");
+  alert(event.currentTarget+"the target is"+event.target);
+}
+obj.fun3 = function(event)
+{
+  alert("innner Div");
+  alert(event.currentTarget+"the target is"+event.target);
 }
 
 var out = document.querySelector("#outer");
 var inn = document.querySelector("#inner");
 var innn = document.querySelector("#inner2");
 
-inner.eventListener("click",obj.fun)
+out.addEventListener("click",obj.fun,false);
+inn.addEventListener("click",obj.fun,false);
+innn.addEventListener("click",obj.fun,false);
