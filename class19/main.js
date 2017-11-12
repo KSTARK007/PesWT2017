@@ -41,7 +41,7 @@ function change ()
 
 function fun()
 {
-  var k = document.querySelector("div p")
+  var k = document.querySelector("div p");
   alert(k.parentNode.children[1].innerHTML);
   alert(k.parentNode.children[0].textContent);
 }

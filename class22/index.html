@@ -14,7 +14,7 @@
               <div id="e">
                 <div id="f">
                   <div id="g">
-                      
+
                   </div>
                 </div>
               </div>
@@ -29,8 +29,8 @@
     <h2>CAPTURING is from window to leaf node(TRUE) </h2>
     <h2>Bubbling is from bottom to Window (FALSE)</h2>
 <div id="outer">
-  <div class="inner">
-    <div class="inner2">
+  <div id="inner">
+    <div id="inner2">
 
     </div>
   </div>
@@ -40,6 +40,7 @@
   <li>event.currentTarget = it point to the Div where the function is been run on  </li>
   <li>event.stopPropagation() = it stops bubbling or capturing when this function is invoked in the dgive Div</li>
   <li>event.eventPhase will return 1=in capturing 2=on the clicked event 3=on the bubbling phase</li>
+  <li>event.cancelable = it returns a bool value stating if the event is preventalble using defaultPrevent</li>
 </ul>
 <a href="main.js">Click here for JS Code</a>
 <script type="text/javascript" src="main.js"></script>

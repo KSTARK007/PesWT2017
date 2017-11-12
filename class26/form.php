@@ -12,7 +12,7 @@
       fwrite($f1 , "hello");
       fwrite($f1 , "\n hi");
       $f1 = fopen("all.txt","r+");
-      $text = fgets($f1, 100);
+      $text = fgets($f1);
       echo $text;
       fclose($f1);
        ?>

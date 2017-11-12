@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML 5</title>
+  </head>
+  <body>
+    <h1>Notes</h1>
+    <ol>
+      <li>Detecting HTML5 support check in Modernizr</li>
+    </ol>
+    <h1>Canvas</h1>
+    <script type="text/javascript">
+      //checking Supported For Geolocation
+      alert(window.navigator.geolocation);
+
+      //checking support for canvas
+      alert(!!document.createElement('canvas').getContext);//!! to get the value as a boolean value
+
+      //checking Support For Input types
+       var inE1 = document.createElement("input");
+       inE1.setAttribute("type","text");
+       alert(inE1.getAttribute("type"));
+       document.body.appendChild(inE1);
+
+       var inE2 = document.createElement("input");
+       inE1.setAttribute("type","yolo");
+       alert(inE1.getAttribute("type"));
+       document.body.appendChild(inE2);
+      //
+       var inE3 = document.createElement("input");
+       inE1.setAttribute("type","email");
+       alert(inE1.getAttribute("type"));
+       document.body.appendChild(inE3);
+      //
+       var inE4 = document.createElement("input");
+       inE1.setAttribute("type","color");
+       alert(inE1.getAttribute("type"));
+       document.body.appendChild(inE4);
+
+      // checking For Video Codecs
+       var vid = document.createElement("video");
+       alert(vid.canPlayType('video/mp4')); // maybe is not sure  probabily is 99%sure  "" if it cant plays it
+       alert(vid.canPlayType('video/mkv'));
+       alert(vid.canPlayType('video/avi'));
+       alert(vid.canPlayType('video/wmv'));
+       alert(vid.canPlayType('video/flv'));
+
+
+
+    </script>
+  </body>
+</html>

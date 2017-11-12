@@ -18,7 +18,7 @@
   $ret2 = preg_match("/Z/",$str);
   $ret3 = preg_match("/^K/",$str);
   $ret4 = preg_match("/K$/",$str);
-  $ret5 = preg_match("/h+/",$str);
+  $ret5 = preg_match("/h/",$str);
   $ret6 = preg_match_all("/[a-z]/",$str2,$m1);
   $ret7 = preg_match_all("/[a-z]+/",$str2,$m2);
   $ret8 = preg_match_all("/[a-z]*/",$str2,$m3);

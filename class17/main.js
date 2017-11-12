@@ -76,7 +76,7 @@ function changeall()
 function change()
 {
   var val = prompt("enter the value where you want to add the value ");
-  var list = document.querySelectorAll('li');
+  var list = document.querySelectorAll("#K>li");
   for (i in list)
   {
 
@@ -84,7 +84,7 @@ function change()
     {
       var newele = document.createElement("li");
       newele.innerHTML = "KSTARK";
-      document.querySelector("ul").insertBefore(newele,list[i]);
+      document.querySelector("#K").insertBefore(newele,list[i]);
     }
   }
 }
