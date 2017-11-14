@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>BUBBLING</title>
+  </head>
+  <body>
+    <h1>BUBBLING</h1>
+    <h3>Here the boxes are named from a-g ,with a being the outermost and g being the innermost. Click on any box and the patten in which the event takes place is displayed. </h3>
+<style media="screen">
+body
+{
+text-align: center;
+}
+ul{
+list-style: none;
+}
+a
+{
+  font-size: 30px;
+}
+
+div
+{
+border: 1px solid black ;
+padding: 40px;
+border-radius: 4px;
+}
+
+</style>
+<div id="a">
+    <div id="b">
+        <div id="c">
+            <div id="d">
+              <div id="e">
+                <div id="f">
+                  <div id="g">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function fora()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(28, 230, 157)";
+}
+
+function forb()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(80, 132, 215)";
+}
+
+function forc()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(22, 114, 190)";
+}
+
+function ford()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(21, 8, 171)";
+}
+
+function fore()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(75, 5, 144)";
+}
+
+function forf()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(62, 5, 102)";
+}
+
+function forg()
+{
+alert(event.currentTarget.getAttribute("id"));
+event.currentTarget.style.backgroundColor = "rgb(46, 5, 68)";
+}
+
+var a = document.querySelector("#a");
+var b = document.querySelector("#b");
+var c = document.querySelector("#c");
+var d = document.querySelector("#d");
+var e = document.querySelector("#e");
+var f = document.querySelector("#f");
+var g = document.querySelector("#g");
+
+a.addEventListener("click",fora,false);
+b.addEventListener("click",forb,false);
+c.addEventListener("click",forc,false);
+d.addEventListener("click",ford,false);
+e.addEventListener("click",fore,false);
+f.addEventListener("click",forf,false);
+g.addEventListener("click",forg,false);
+
+
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>CANVAS 3 linear Gradient and ARC</title>
+  </head>
+  <body>
+    <canvas width="1850" height="1000" id="canvas"> </canvas>
+    <ol>
+      <li>always draw image only once it is loaded </li>
+      <li>100,0(second and third parameter) is the point in the image where you what to start croping </li>
+      <li>500,400(4th and 5th parameter) is the width and the heeight of the crop u want to make </li>
+      <li>500,0 (6th and 7th parameter) is the staring point from where your croped image has to be displayed</li>
+      <li>400,200 (8th and 9th parameter) is the width and height of the croped image which needs to be printed</li>
+    </ol>
+    <script type="text/javascript">
+      var canvas = document.querySelector("#canvas");
+      var context = canvas.getContext('2d');
+
+      var img = new Image();
+      img.src = "1.JPG";
+      img.addEventListener("load",fun1,true);
+      function fun1()
+      {
+          context.drawImage(img,0,0,400,200);
+          context.beginPath();
+          context.drawImage(img,100,0,500,400,500,0,400,200);
+      }
+      context.beginPath();
+      context.textBaseline = "top";
+      context.font = "50px arial";
+      context.fillText("yellow",50,350);
+      context.strokeRect(50,350,300,200);
+
+      context.beginPath();
+      context.textBaseline = "bottom";
+      context.font = "50px arial";
+      context.fillText("yellow",400,350);
+      context.strokeRect(400,350,300,200);
+
+      context.beginPath();
+      context.textBaseline = "alphabetic";
+      context.font = "50px arial";
+      context.fillText("yellow",800,350);
+      context.strokeRect(800,350,300,200);
+
+      context.beginPath();
+      context.textBaseline = "hanging";
+      context.font = "50px arial";
+      context.fillText("yellow",1200,350);
+      context.strokeRect(1200,350,300,200);
+
+      context.beginPath();
+      context.font = "50px arial";
+      context.fillText("Top",150,600);
+
+
+      context.beginPath();
+      context.font = "50px arial";
+      context.fillText("Bottom",450,600);
+
+      context.beginPath();
+      context.font = "50px arial";
+      context.fillText("alphabetic",850,600);
+
+      context.beginPath();
+      context.font = "50px arial";
+      context.fillText("hanging",1250,600);
+
+    </script>
+  </body>
+</html>
