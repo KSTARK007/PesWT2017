@@ -13,20 +13,20 @@ h1{
   font-weight: 400;
 }
 
-ul a{
-  color: red;
+/*ul a{
+  color: blue ;
 
-}
+}*/
 
-li>a
+/*li>a
 {
   color: orange;
-}
+}*/
 
-li+a
+/*li+a
 {
   color: green;
-}
+}*/
 
 ul+li
 {
@@ -37,7 +37,6 @@ ul+li
 {
   font-size: 40px;
 }
-
 *
 {
   font-size: 8px;

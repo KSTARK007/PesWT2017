@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LOCAL STORAGE</title>
+  </head>
+  <body>
+    <textarea id="text" rows="8" cols="80"></textarea>
+    <input type="button" onclick="fun1">
+<h1>NOTES</h1>
+<ul>
+  <li>SIZE : cookie is of the size 4kB but local storage has the size of 5-10 MB</li>
+  <li>it stays out locally and is not sent to the server for every request </li>
+  <li>if u want to intract with the server we still have to store is as cookie </li>
+  <li>local storage cant be deleted automaticaly it has to be deleted manually</li>
+  <li>
+    <ol>
+      <li>LocalStorage : window.localStorage will be saved permanetly </li>
+      <li>sessionStorage : window.sessionStorage will get distroyed as soon as the browsers called </li>
+    </ol>
+  </li>
+</ul>
+<h1>methods</h1>
+<ul>
+  <li>localStorage.prop1 = "val1"; // used is no space is used for a variable </li>
+  <li>localStorage["prop 2"] = "val2"; // used if space is used for a variable </li>
+  <li>localStorage.setItem(key,value)</li>
+  <li>localStorage.getItem(key);</li>
+  <li>localStorage.removeItem(key);</li>
+  <li>delete localStorage.prop1;</li>
+  <li>localStorage.clear();</li>
+</ul>
+<script type="text/javascript">
+
+  alert(localStorage.length);
+  localStorage.value1 = "November";
+  localStorage["value2"] = "November2";
+  localStorage.setItem("value3","november3");
+  alert(localStorage.value1);
+  alert(localStorage["value2"]);
+  alert(localStorage.getItem("value3"));
+  localStorage.removeItem("value1");
+  delete localStorage.value2;
+  //localStorage.clear();
+
+</script>
+  </body>
+</html>

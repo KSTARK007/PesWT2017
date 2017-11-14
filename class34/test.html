@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LOCAL STORAGE</title>
+  </head>
+  <body>
+    <form>
+      <textarea id="text" rows="8" cols="80"></textarea>
+      <br>
+      <input type="button" onclick="fun1()" value="SUBIMT">
+
+    </form>
+
+<script type="text/javascript">
+document.getElementById("text").value = localStorage.value1;
+
+  function fun1()
+  {
+
+      localStorage.value1 = document.getElementById("text").value;
+  }
+
+</script>
+  </body>
+</html>

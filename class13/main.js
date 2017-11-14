@@ -7,6 +7,7 @@ var obj1 = {
  };
 obj1.fun1();
 alert(typeof obj1);
+alert(obj1.name);
 
 //second method
 var obj2 = {};

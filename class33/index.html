@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>CANVAS 3 linear Gradient and ARC</title>
+  </head>
+  <body>
+    <canvas width="1850" height="1000" id="canvas"> </canvas>
+    <h3>if you what to change the height or width of canvas do it in the attribute and not in the CSS file</h3>
+    <ol>
+      <li>lines context.lineTo(from,to);</li>
+      <li>rectangles/square context.rect(100(x_axis),600(y_axis),400(width),300(height));</li>
+      <li>circles context.arc(x(center_x_axis),y(center_y_axis),r(radius),sa(start_angle),ea(end_angle),true(is(anticlock)))</li>
+      <li>Text</li>
+      <li>images</li>
+      <li>Gradent</li>
+    </ol>
+    <script type="text/javascript">
+      var canvas = document.querySelector("#canvas");
+      var context = canvas.getContext('2d');
+      context.arc(400,200,100,0,(2*Math.PI),true);
+      context.fillStyle = "#11FF99";
+      context.fill();
+
+      context.beginPath();
+      context.arc(700,200,100,0,(2*Math.PI),false);
+      context.lineWidth = 20;
+      context.strokeStyle = "#11FF99";
+      context.stroke();
+
+      context.beginPath();
+      context.arc(1000,200,100,0,(Math.PI/2),false);
+      context.lineWidth = 5;
+      context.fillStyle = "black";
+      context.strokeStyle = "#11FF99";
+      context.stroke();
+      context.fill();
+
+      context.beginPath();
+      var gradient = context.createLinearGradient(200,400,500,400);
+      //alert(gradient);
+      gradient.addColorStop(0,"#FFABCD");
+      gradient.addColorStop(0.5,"#11FF99");
+      gradient.addColorStop(1,"#1134FF");
+      context.fillStyle = gradient;
+      context.fillRect(200,400,300,400);
+
+      context.beginPath();
+      var gradient = context.createLinearGradient(600,400,600,800);
+      //alert(gradient);
+      gradient.addColorStop(0,"#FFABCD");
+      gradient.addColorStop(0.5,"#11FF99");
+      gradient.addColorStop(1,"#1134FF");
+      context.fillStyle = gradient;
+      context.fillRect(600,400,300,400);
+
+      context.beginPath();
+      var gradient = context.createLinearGradient(1000,400,1300,800);
+      //alert(gradient);
+      gradient.addColorStop(0,"#FFABCD");
+      gradient.addColorStop(0.5,"#11FF99");
+      gradient.addColorStop(1,"#1134FF");
+      context.fillStyle = gradient;
+      context.fillRect(1000,400,300,400);
+
+      context.beginPath();
+      var gradient = context.createRadialGradient(1600,600,200,1600,600,20);
+      //alert(gradient);
+      gradient.addColorStop(0,"#FFABCD");
+      gradient.addColorStop(0.5,"#11FF99");
+      gradient.addColorStop(1,"#1134FF");
+      context.fillStyle = gradient;
+      context.arc(1600,600,200,0,(2*Math.PI),true);
+      context.fill();
+
+      context.beginPath();
+      var gradient = context.createRadialGradient(1500,100,200,1600,200,40);
+      //alert(gradient);
+      gradient.addColorStop(0,"#FFABCD");
+      gradient.addColorStop(0.5,"#11FF99");
+      gradient.addColorStop(1,"#1134FF");
+      context.fillStyle = gradient;
+      context.fillRect(1400,10,400,350);
+      context.fill();
+
+      context.beginPath();
+      context.moveTo(1620,220);
+      context.lineTo(1800,360)
+      context.strokeStyle = "black";
+      context.stroke();
+
+    </script>
+  </body>
+</html>
