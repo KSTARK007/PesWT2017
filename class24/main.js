@@ -24,15 +24,15 @@ var ev1 = new CustomEvent("myEvent1",{detail:{date:new Date()}});
 document.body.addEventListener("myEvent1",obj.fun2,true);
 document.body.dispatchEvent(ev1);
 
-count = 0 ;
-
-function try1()
-{
-  if(count >1)
-      clearInterval(x);
-  else {
-      alert(count);
-  }
-  count++;
-}
-var x = window.setInterval(try1 , 2000);
+// count = 0 ;
+//
+// function try1()
+// {
+//   if(count >1)
+//       clearInterval(x);
+//   else {
+//       alert(count);
+//   }
+//   count++;
+// }
+// var x = window.setInterval(try1 , 2000);

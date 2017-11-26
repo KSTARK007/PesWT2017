@@ -111,6 +111,7 @@ function fun1($day,$value = 100)
   echo $value."<br>";
   return 300;
 }
+
 fun1("monday");
 fun1("sunday",300);
 echo $e ;

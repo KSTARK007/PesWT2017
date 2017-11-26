@@ -1,0 +1,10 @@
+CACHE:
+homepage.html
+page1.html
+page2.html
+page3.html
+NETWORK:
+page4.html
+page5.html
+FALLBACK:
+/ offline.html

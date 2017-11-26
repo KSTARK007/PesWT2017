@@ -23,10 +23,10 @@ h1{
   color: orange;
 }*/
 
-/*li+a
+li+a
 {
-  color: green;
-}*/
+  color: red;
+}
 
 ul+li
 {
