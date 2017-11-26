@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OFFLINE WEB APPLICATIONs </title>
+  </head>
+  <body>
+<h1>NOTES for </h1>
+<ul>
+  <li>x.appcache it will store all the file which will be refered in the manifest file on the local machine </li>
+  <li>
+    <ol>mainfest file is divided into 3 parts as follows
+      <li>CACHE it will download it </li>
+      <li>Network it need network so it does not download it </li>
+      <li>Fallback it will be download it will be displayed if the requestedd site is not avaliable in the cache</li>
+    </ol>
+  </li>
+  <li>to save the page atleast it should be visited once</li>
+  <li>Manifest File - it contains a list of urls </li>
+  <li>in this example
+    <ol>
+      <li>
+        CACHE
+    <ul>
+      <li>homepage</li>
+      <li>page1</li>
+      <li>page2</li>
+      <li>page3</li>
+    </ul>
+      </li>
+      <li>
+        NETWORK
+    <ul>
+      <li>page4</li>
+      <li>page5</li>
+  </ul>
+      </li>
+      <li>
+        FALLBACK
+        <ul>
+          <li>offline</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+  </body>
+</html>

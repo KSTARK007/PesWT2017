@@ -5,8 +5,8 @@
     <title>LOCAL STORAGE</title>
   </head>
   <body>
-    <textarea id="text" rows="8" cols="80"></textarea>
-    <input type="button" onclick="fun1">
+    <textarea id="text" rows="8" cols="80"></textarea><br>
+    <input type="button" onclick="fun1()" value="SUBMIT">
 <h1>NOTES</h1>
 <ul>
   <li>SIZE : cookie is of the size 4kB but local storage has the size of 5-10 MB</li>
@@ -31,6 +31,14 @@
   <li>localStorage.clear();</li>
 </ul>
 <script type="text/javascript">
+if(!localStorage.value4)
+  localStorage.value4 = "HELLO";
+document.querySelector("#text").value = localStorage.value4;
+function fun1()
+{
+
+  localStorage.value4 = document.querySelector("#text").value;
+}
 
   alert(localStorage.length);
   localStorage.value1 = "November";

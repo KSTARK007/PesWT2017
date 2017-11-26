@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Sine Wave</title>
+ </head>
+ <body>
+
+  <canvas height="1000px" width="1800px" style="border: solid 2px black"></canvas>
+
+ </body>
+ <script>
+
+var canvas = document.querySelector("canvas");
+var c = canvas.getContext('2d');
+c.moveTo(0,200);
+c.strokeStyle = "red";
+var x=0;
+var i=0;
+var x = setInterval(a,10);
+
+function a()
+{
+
+   x=i;
+  if(i==100)
+       i=0;
+  var y = Math.sin(x)*50+200;
+  c.lineTo(x,y);
+  i = i+6;
+  c.stroke();
+
+}
+
+ c.closePath();
+ c.moveTo(0,200);
+ c.lineTo(1800,200);
+
+ </script>
+</html>
